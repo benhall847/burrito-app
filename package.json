@@ -1,0 +1,43 @@
+{
+  "name": "burrito-orders",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "db:create": "createdb burrito-app",
+    "db:init": "psql -f schema.sql burrito-app && psql -f seed.sql burrito-app",
+    "db:destroy": "dropdb burrito-app",
+    "db:reset": "npm run db:destroy && npm run db:create && npm run db:init",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "pg-promise": "^8.6.4"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "node": "^11.12.0"
+  },
+  "repository": {
+    "type": "git",
+<<<<<<< HEAD
+    "url": "git+https://github.com/benhall847/burrito-order-DB-node-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benhall847/burrito-order-DB-node-app/issues"
+  },
+  "homepage": "https://github.com/benhall847/burrito-order-DB-node-app#readme",
+=======
+    "url": "git+https://github.com/benhall847/coffee-order-DB-node-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benhall847/coffee-order-DB-node-app/issues"
+  },
+  "homepage": "https://github.com/benhall847/coffee-order-DB-node-app#readme",
+>>>>>>> 3940ed841ccc16e01cce440227abb5ac0ba78cbf
+  "description": ""
+}
